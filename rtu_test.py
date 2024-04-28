@@ -1,5 +1,3 @@
-#bldc motor, encoder/hall sensor, ros2, rtu
-
 #!/usr/bin/env python3
 
 import serial
