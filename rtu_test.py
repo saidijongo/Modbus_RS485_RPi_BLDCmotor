@@ -68,26 +68,20 @@ client1.clear_buffers_before_each_transaction = True
 
 # a = int('0000000000011000',2)
 # print(a)
-
-
-#####################################################################################
+####################################################################################
 '''
 Temperature
 '''
 # driver_temp  = client1.read_long(248) # read 4bytes (32bit)
 # print("driver temp: ", driver_temp)
-
-
-#####################################################################################
+##################################################################################
 '''
 Z-Home Pos (High-speed return-to-home operation)
 **ZHOME is assigned to bit 4 of the driver input command (007Dh) in initial setting.
 (10000 in a binary number=0010h in a hexadecimal number)
 '''
 # client1.write_register(int("0x007D", 0), int("0x0010", 0), functioncode=6) # Z-Home ON
-
-
-#####################################################################################
+###################################################################################
 '''
 Change Operating Speed to 5000hz
 '''
@@ -106,7 +100,6 @@ Change Operating Speed to 5000hz
 **Stop
 '''
 client1.write_register(int("0x007D", 0), int("0x0000", 0), functioncode=6) # Stop
-
 
 #####################
 #### Read I/O Command
