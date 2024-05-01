@@ -7,6 +7,7 @@ from .calculations import (rpm_to_registers, registers_to_rpm,
 from .registers import ServoFD1X3 as Servo
 
 
+
 class ServoController:
 
     def __init__(self, port, address, debug = False):
@@ -21,6 +22,7 @@ class ServoController:
 
         self.opmode = None  # position, velocity
 
+  
     def reset(self, ):
         """reset the servo to factory settings
         """
@@ -29,6 +31,7 @@ class ServoController:
                                        functioncode=6)
         self.opmode = None
 
+  
     def set_velocitymode(self, direction='forward'):
         """set the servo to velocity mode
 
@@ -54,7 +57,8 @@ class ServoController:
                                        Servo.CONTROL["Value"]["Start"],
                                        functioncode=6)
         self.opmode = 'velocity'
-        
+
+  
     def set_profileacc(self, acc):
       """set the acceleration of the servo
 
@@ -81,6 +85,7 @@ class ServoController:
             rpm_to_registers(rpm),
         )
 
+  
     def get_velocity(self, ):
         """get the velocity of the servo
 
@@ -92,6 +97,7 @@ class ServoController:
                 Servo.VelocityFeedback["Register"],
                 Servo.VelocityFeedback["read_length"]))
 
+  
     def set_positionmode(self, ):
         """set the servo to absoute position mode
 
@@ -146,6 +152,7 @@ class ServoController:
             rpm_to_registers(rpm),
         )
 
+  
     def set_position(self, value, radians=True):
         """set the position of the servo in radians
 
@@ -169,7 +176,6 @@ class ServoController:
 
     def get_position(self, radians=True):
         """get the position of the servo in radians
-
         Returns:
             float: angle in radians, or the encoder value
         """
