@@ -11,4 +11,7 @@ Using RS485 serial communication for BLDC motor control in the raspberry pi.
  https://www.ez-net.co.kr/ez-net/download/NEXT-US485C01%20Manual_141016.pdf
 
  https://www.renesas.com/us/en/key-technologies/motor-control-robotics/bldc-motor-control-algorithms
+
+
+http://www.eskorea.net/html/data/technique/CANvsRS485.pdf
  
