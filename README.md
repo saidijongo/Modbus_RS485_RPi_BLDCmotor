@@ -17,4 +17,5 @@ CAN & RS485
 http://www.eskorea.net/html/data/technique/CANvsRS485.pdf
 https://medium.com/@dorlecontrols/can-bus-vs-rs-485-9298236dfa54
 https://medium.com/@dorlecontrols/can-2-0-vs-can-fd-the-evolution-of-controller-area-network-4994c9ef0116
+https://www.influxbigdata.in/post/can-bus-vs-rs485-3-reasons-why-can-is-better
  
